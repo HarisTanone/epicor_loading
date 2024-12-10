@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Epicor Loading And Disable Other Action",
+  "version": "0.1",
+  "description": "Ketika Loading User Tidak Bisa Melakukan Apapun",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.epicorsaas.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": []
+    }
+  ],
+  "icons": {
+    "128": "epicor_icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "loading.js"
+      ],
+      "matches": [
+        "*://*.epicorsaas.com/*"
+      ]
+    }
+  ]
+}
